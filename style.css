@@ -104,7 +104,7 @@ header {
 .new-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  gap: 1rem;
+  gap: 3.5rem;
   margin-top: 2rem;
 }
 .box {
