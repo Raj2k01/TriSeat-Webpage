@@ -60,37 +60,68 @@ header {
   cursor: pointer;
   display: none;
 }
-.home {
+.slider-frame{
   width: 100%;
-  min-height: 100vh;
-  background-image: url(img/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center;
+  min-height: 50vh;
+  max-height: 100vh;
+  overflow: hidden;
 }
-.home-text h1 {
-  font-size: 2.7rem;
+@keyframes slide_animation{
+      0% {left:0px;}
+      10% {left:0px;}
+      20% {left:1200px;}
+      30% {left:1200px;}
+      40% {left: 2400px;}
+      50% {left: 2400px;}
+      60% {left: 1200px;}
+      70% {left: 1200px;}
+      80% {left: 0px;}
+      90% {left: 0px;}
+      100% {left:0px;}
 }
-.home-text p {
-  font-size: 0.938rem;
-  margin: 0.4rem 0 1.8rem;
+@-webkit-keyframes slide_animation{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:1200px;}
+  30% {left:1200px;}
+  40% {left: 2400px;}
+  50% {left: 2400px;}
+  60% {left: 1200px;}
+  70% {left: 1200px;}
+  80% {left: 0px;}
+  90% {left: 0px;}
+  100% {left:0px;}
 }
-.home-text span {
-  color: var(--main-color);
+.slider-images{
+  width: 3600px;
+  height: 800px;
+  margin: 0 0 0 -2500px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  animation-name: slide_animation;
+  -webkit-animation-duration: 33s;
+  animation-duration: 33s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
 }
-.btn {
-  padding: 10px 14px;
-  background: var(--main-color);
-  color: #fff;
-  border-radius: 0.3rem;
-  font-size: 14px;
+
+.img-container{
+  height: 800px;
+  width: 1200px;
+  position: relative;
+  float: left;
+
+
+
 }
-.btn:hover {
-  background: #ffb266;
+.home-text{
+  display: none;
 }
+
 .heading {
   text-align: center;
 }
@@ -399,4 +430,5 @@ form button{
     .about-text h2{
         font-size: 1.2rem;
     }
+
 }
