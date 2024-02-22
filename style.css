@@ -394,9 +394,7 @@ form button{
     padding: 11px 4%;
   }
   #menu-icon {
-    display: initial;
-    padding-right: 140px;
-    
+    display: initial; 
   }
   
   header .navbar {
@@ -436,6 +434,10 @@ form button{
     .home-text h1{
         font-size: 1.7rem;
     }
+    html,body{
+      max-width: 100%;
+      overflow-x: hidden;
+    }
     .home-text p{
       font-size: 0.97rem;
     }
@@ -456,7 +458,12 @@ form button{
     .about-text h2{
         font-size: 1.2rem;
     }
-    
+    .about-text{
+      padding-right: 60px;
+    }
+    .about{
+      overflow-x: auto;
+    }
 
 
 }
