@@ -395,9 +395,10 @@ form button{
   }
   #menu-icon {
     display: initial;
-    padding:100px;
+    padding-right: 100px;
     
   }
+  
   header .navbar {
     position: absolute;
     top: -500px;
