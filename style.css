@@ -118,8 +118,25 @@ header {
 
 
 }
-.home-text{
-  display: none;
+.home-text h1 {
+  font-size: 2.7rem;
+}
+.home-text p {
+  font-size: 1.2rem;
+  margin: 0.4rem 0 1.8rem;
+}
+.home-text span {
+  color: var(--main-color);
+}
+.btn {
+  padding: 10px 14px;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 0.3rem;
+  font-size: 24px;
+}
+.btn:hover {
+  background: #ffb266;
 }
 
 .heading {
@@ -417,6 +434,13 @@ form button{
     .home-text h1{
         font-size: 1.7rem;
     }
+    .home-text p{
+      font-size: 0.97rem;
+    }
+    .home-text .btn{
+      font-size: 16px;
+    }
+  
     .shop-container,
     .new-container {
       grid-template-columns: repeat(auto-fit, minmax(200px, auto));
@@ -430,5 +454,7 @@ form button{
     .about-text h2{
         font-size: 1.2rem;
     }
+    
+
 
 }
