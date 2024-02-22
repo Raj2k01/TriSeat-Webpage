@@ -395,6 +395,7 @@ form button{
   }
   #menu-icon {
     display: initial;
+    padding:100px;
     
   }
   header .navbar {
