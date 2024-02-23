@@ -99,8 +99,8 @@ header {
   position: relative;
   -webkit-animation-name: slide_animation;
   animation-name: slide_animation;
-  -webkit-animation-duration: 33s;
-  animation-duration: 33s;
+  -webkit-animation-duration: 18s;
+  animation-duration: 18s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
