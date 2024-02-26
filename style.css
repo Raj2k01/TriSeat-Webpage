@@ -60,6 +60,8 @@ header {
   cursor: pointer;
   display: none;
 }
+
+
 .slider-frame{
   width: 100%;
   min-height: 50vh;
@@ -114,10 +116,15 @@ header {
   width: 1200px;
   position: relative;
   float: left;
-
-
-
 }
+@media(min-width:491px) {
+  .slider-frame-1,.slider-images-1,.img-container-1{
+    display: none;
+  }
+}
+
+
+
 .home-text h1 {
   font-size: 2.7rem;
 }
@@ -204,9 +211,7 @@ header {
   border-radius: 4px 0 4px 0;
   background: var(--main-color);
 }
-.box .bx-cart:hover {
-  background: #8fc53d;
-}
+
 .new-container .box {
   border-radius: 4px;
 }
@@ -464,6 +469,72 @@ form button{
     .about{
       overflow-x: auto;
     }
-
-
+    .slider-frame,.slider-images,.img-container{
+      display: none;
+    }
+    .slider-frame-1{
+      width: 100%;
+      min-height: 50vh;
+      max-height: 100vh;
+      overflow: hidden;
+    }
+    @keyframes slide_animation{
+          0% {left:0px;}
+          10% {left:0px;}
+          20% {left:1200px;}
+          30% {left:1200px;}
+          40% {left: 2400px;}
+          50% {left: 2400px;}
+          60% {left: 1200px;}
+          70% {left: 1200px;}
+          80% {left: 0px;}
+          90% {left: 0px;}
+          100% {left:0px;}
+    }
+    @-webkit-keyframes slide_animation{
+      0% {left:0px;}
+      10% {left:0px;}
+      20% {left:1200px;}
+      30% {left:1200px;}
+      40% {left: 2400px;}
+      50% {left: 2400px;}
+      60% {left: 1200px;}
+      70% {left: 1200px;}
+      80% {left: 0px;}
+      90% {left: 0px;}
+      100% {left:0px;}
+    }
+    .slider-images-1{
+      width: 3600px;
+      height: 800px;
+      margin: 0 0 0 -2500px;
+      position: relative;
+      -webkit-animation-name: slide_animation;
+      animation-name: slide_animation;
+      -webkit-animation-duration: 10s;
+      animation-duration: 10s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate;
+      -webkit-animation-play-state: running;
+      animation-play-state: running;
+    }
+    
+    .img-container-1{
+      height: 700px;
+      width: 560px;
+      position: relative;
+      float: left;
+    }
+    .slider-images-1 #img-container-5{
+      width: 530px;
+    }
+    .slider-images-1 #img-container-6{
+      padding-left: 1300px;
+    }
+    .brands-container img {
+      padding: 5px;
+      filter: grayscale(0);
+    }
 }
